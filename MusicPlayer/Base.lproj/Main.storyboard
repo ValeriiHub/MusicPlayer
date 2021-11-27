@@ -66,6 +66,36 @@
             </objects>
             <point key="canvasLocation" x="871.01449275362324" y="-27.455357142857142"/>
         </scene>
+        <!--Player View Controller-->
+        <scene sceneID="7nZ-8k-GYh">
+            <objects>
+                <viewController storyboardIdentifier="player" id="oOf-Cc-edD" customClass="PlayerViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QhD-Gy-y4x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PfT-t4-kWa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qo5-Ji-I5q"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Qo5-Ji-I5q" firstAttribute="trailing" secondItem="PfT-t4-kWa" secondAttribute="trailing" id="2m3-BM-2iv"/>
+                            <constraint firstItem="PfT-t4-kWa" firstAttribute="top" secondItem="Qo5-Ji-I5q" secondAttribute="top" id="Caz-qe-Em1"/>
+                            <constraint firstItem="PfT-t4-kWa" firstAttribute="leading" secondItem="Qo5-Ji-I5q" secondAttribute="leading" id="LKk-Sv-OXT"/>
+                            <constraint firstItem="Qo5-Ji-I5q" firstAttribute="bottom" secondItem="PfT-t4-kWa" secondAttribute="bottom" id="dAo-GU-u2M"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="holder" destination="PfT-t4-kWa" id="QXk-S3-sux"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8n-Ox-AoF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784" y="-27"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZWX-gA-07k">
             <objects>

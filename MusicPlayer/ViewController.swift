@@ -83,10 +83,11 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         let position = indexPath.row
         
         //song
-        guard let vc = storyboard?.instantiateViewController(withIdentifier: "player") else { return}
-        present(vc, animated: true)
+        guard let playerVC = storyboard?.instantiateViewController(withIdentifier: "player") as? PlayerViewController else { return}
+        playerVC.songs = songs
+        playerVC.position = position
         
-        
+        present(playerVC, animated: true)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
