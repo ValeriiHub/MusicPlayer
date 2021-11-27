@@ -23,34 +23,34 @@ class ViewController: UIViewController {
     }
 
     func getSongs() {
-        songs.append(Song(name: "Background music",
-                          albumName: "Other",
-                          artistName: "Rnado",
+        songs.append(Song(name: "Группа крови",
+                          albumName: "Альбом 1",
+                          artistName: "Кино",
                           imageName: "image1",
                           trackName: "song1"))
-        songs.append(Song(name: "Havana",
-                          albumName: "Havana album",
-                          artistName: "Camilla",
+        songs.append(Song(name: "Ralf",
+                          albumName: "Album 2",
+                          artistName: "Imagine Dragons",
                           imageName: "image2",
                           trackName: "song2"))
-        songs.append(Song(name: "Viva la vida",
-                          albumName: "Something",
-                          artistName: "Coldplay",
+        songs.append(Song(name: "Египтянин",
+                          albumName: "Альбом 3",
+                          artistName: "Пикник",
                           imageName: "image3",
                           trackName: "song3"))
-        songs.append(Song(name: "Background music",
-                          albumName: "Other",
-                          artistName: "Rnado",
+        songs.append(Song(name: "Группа крови",
+                          albumName: "Альбом 1",
+                          artistName: "Кино",
                           imageName: "image1",
                           trackName: "song1"))
-        songs.append(Song(name: "Havana",
-                          albumName: "Havana album",
-                          artistName: "Camilla",
+        songs.append(Song(name: "Ralf",
+                          albumName: "Album 2",
+                          artistName: "Imagine Dragons",
                           imageName: "image2",
                           trackName: "song2"))
-        songs.append(Song(name: "Viva la vida",
-                          albumName: "Something",
-                          artistName: "Coldplay",
+        songs.append(Song(name: "Египтянин",
+                          albumName: "Альбом 3",
+                          artistName: "Пикник",
                           imageName: "image3",
                           trackName: "song3"))
     }
