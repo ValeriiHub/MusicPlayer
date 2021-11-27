@@ -13,6 +13,10 @@
 		38E86E592750EE380011ED63 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E86E572750EE380011ED63 /* Main.storyboard */; };
 		38E86E5B2750EE3C0011ED63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38E86E5A2750EE3C0011ED63 /* Assets.xcassets */; };
 		38E86E5E2750EE3C0011ED63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38E86E5C2750EE3C0011ED63 /* LaunchScreen.storyboard */; };
+		38E86E662750EF4D0011ED63 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38E86E652750EF4D0011ED63 /* Song.swift */; };
+		38E86E6B2752575F0011ED63 /* song2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 38E86E682752575E0011ED63 /* song2.mp3 */; };
+		38E86E6C2752575F0011ED63 /* song3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 38E86E692752575E0011ED63 /* song3.mp3 */; };
+		38E86E6D2752575F0011ED63 /* song1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 38E86E6A2752575F0011ED63 /* song1.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		38E86E5A2750EE3C0011ED63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38E86E5D2750EE3C0011ED63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38E86E5F2750EE3C0011ED63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38E86E652750EF4D0011ED63 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		38E86E682752575E0011ED63 /* song2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song2.mp3; sourceTree = "<group>"; };
+		38E86E692752575E0011ED63 /* song3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song3.mp3; sourceTree = "<group>"; };
+		38E86E6A2752575F0011ED63 /* song1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = song1.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,33 @@
 			children = (
 				38E86E512750EE380011ED63 /* AppDelegate.swift */,
 				38E86E532750EE380011ED63 /* SceneDelegate.swift */,
+				38E86E6E275259170011ED63 /* Model */,
 				38E86E552750EE380011ED63 /* ViewController.swift */,
 				38E86E572750EE380011ED63 /* Main.storyboard */,
+				38E86E67275253850011ED63 /* Audio */,
 				38E86E5A2750EE3C0011ED63 /* Assets.xcassets */,
 				38E86E5C2750EE3C0011ED63 /* LaunchScreen.storyboard */,
 				38E86E5F2750EE3C0011ED63 /* Info.plist */,
 			);
 			path = MusicPlayer;
+			sourceTree = "<group>";
+		};
+		38E86E67275253850011ED63 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				38E86E6A2752575F0011ED63 /* song1.mp3 */,
+				38E86E682752575E0011ED63 /* song2.mp3 */,
+				38E86E692752575E0011ED63 /* song3.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		38E86E6E275259170011ED63 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				38E86E652750EF4D0011ED63 /* Song.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +156,9 @@
 				38E86E5E2750EE3C0011ED63 /* LaunchScreen.storyboard in Resources */,
 				38E86E5B2750EE3C0011ED63 /* Assets.xcassets in Resources */,
 				38E86E592750EE380011ED63 /* Main.storyboard in Resources */,
+				38E86E6C2752575F0011ED63 /* song3.mp3 in Resources */,
+				38E86E6B2752575F0011ED63 /* song2.mp3 in Resources */,
+				38E86E6D2752575F0011ED63 /* song1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38E86E662750EF4D0011ED63 /* Song.swift in Sources */,
 				38E86E562750EE380011ED63 /* ViewController.swift in Sources */,
 				38E86E522750EE380011ED63 /* AppDelegate.swift in Sources */,
 				38E86E542750EE380011ED63 /* SceneDelegate.swift in Sources */,
@@ -295,8 +327,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,7 +340,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,8 +357,10 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -334,7 +370,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
