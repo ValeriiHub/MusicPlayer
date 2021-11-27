@@ -183,10 +183,25 @@ class PlayerViewController: UIViewController {
         if player?.isPlaying == true {
             player?.pause()
             playPauseButton.setBackgroundImage(UIImage(systemName: "play.fill"), for: .normal)
+            
+            //shrink image size
+            UIView.animate(withDuration: 0.2) {
+                self.albumImageView.frame = CGRect(x: 30,
+                                                   y: 30,
+                                                   width: self.holder.frame.size.width - 60,
+                                                   height: self.holder.frame.size.width - 60)
+            }
         } else {
             player?.play()
             playPauseButton.setBackgroundImage(UIImage(systemName: "pause.fill"), for: .normal)
-
+            
+            // increase image size
+            UIView.animate(withDuration: 0.2) {
+                self.albumImageView.frame = CGRect(x: 10,
+                                                   y: 10,
+                                                   width: self.holder.frame.size.width - 20,
+                                                   height: self.holder.frame.size.width - 20)
+            }
         }
     }
     
